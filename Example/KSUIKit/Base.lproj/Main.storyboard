@@ -1,25 +1,96 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="KSUIKit_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AWESOME..!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2G-Ye-Ikv" customClass="KSUILabel" customModule="KSUIKit">
+                                <rect key="frame" x="46.5" y="264" width="227" height="41.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.82745098039999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontType" value="BoldItalic"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="36"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2XE-7j-7AU">
+                                <rect key="frame" x="16" y="476" width="136" height="30"/>
+                                <state key="normal" title="Regular"/>
+                                <connections>
+                                    <action selector="setRegular:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zLq-dD-eyO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oh-YQ-nDI">
+                                <rect key="frame" x="16" y="522" width="136" height="30"/>
+                                <state key="normal" title="Bold"/>
+                                <connections>
+                                    <action selector="setBold:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1oS-bH-nZF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAE-fn-cUw">
+                                <rect key="frame" x="168" y="522" width="136" height="30"/>
+                                <state key="normal" title="BoldItalic"/>
+                                <connections>
+                                    <action selector="setBoldItalic:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6ks-vD-pqJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILx-uZ-aYP">
+                                <rect key="frame" x="168" y="476" width="136" height="30"/>
+                                <state key="normal" title="Italic"/>
+                                <connections>
+                                    <action selector="setItalic:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5M7-Vf-pSM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ILx-uZ-aYP" firstAttribute="width" secondItem="2XE-7j-7AU" secondAttribute="width" id="0SD-KG-wpI"/>
+                            <constraint firstItem="ILx-uZ-aYP" firstAttribute="leading" secondItem="2XE-7j-7AU" secondAttribute="trailing" constant="16" id="1Ye-MU-nxR"/>
+                            <constraint firstItem="KAE-fn-cUw" firstAttribute="width" secondItem="7oh-YQ-nDI" secondAttribute="width" id="3mI-Hl-yHR"/>
+                            <constraint firstItem="N2G-Ye-Ikv" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="4mw-GU-Gp1"/>
+                            <constraint firstItem="KAE-fn-cUw" firstAttribute="top" secondItem="ILx-uZ-aYP" secondAttribute="bottom" constant="16" id="7p2-Uv-3ZG"/>
+                            <constraint firstItem="N2G-Ye-Ikv" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="9KB-ag-kTp"/>
+                            <constraint firstAttribute="trailing" secondItem="ILx-uZ-aYP" secondAttribute="trailing" constant="16" id="EuG-AQ-Qdd"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="KAE-fn-cUw" secondAttribute="bottom" constant="16" id="MFM-OH-Q8B"/>
+                            <constraint firstItem="KAE-fn-cUw" firstAttribute="leading" secondItem="7oh-YQ-nDI" secondAttribute="trailing" constant="16" id="RRB-hL-bzi"/>
+                            <constraint firstItem="7oh-YQ-nDI" firstAttribute="top" secondItem="2XE-7j-7AU" secondAttribute="bottom" constant="16" id="SIw-Wv-Xl8"/>
+                            <constraint firstItem="KAE-fn-cUw" firstAttribute="leading" secondItem="7oh-YQ-nDI" secondAttribute="trailing" constant="16" id="ZVK-ND-xYy"/>
+                            <constraint firstItem="ILx-uZ-aYP" firstAttribute="leading" secondItem="2XE-7j-7AU" secondAttribute="trailing" constant="16" id="ZY5-cS-DBU"/>
+                            <constraint firstAttribute="trailing" secondItem="KAE-fn-cUw" secondAttribute="trailing" constant="16" id="ab9-W3-zbN"/>
+                            <constraint firstItem="2XE-7j-7AU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="dLj-Ag-gcR"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="7oh-YQ-nDI" secondAttribute="bottom" constant="16" id="rAm-Bo-YSR"/>
+                            <constraint firstItem="7oh-YQ-nDI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="smQ-p0-7eM"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblText" destination="N2G-Ye-Ikv" id="RiR-5v-eT1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-99.375" y="122.53521126760563"/>
         </scene>
     </scenes>
 </document>

@@ -1,0 +1,6 @@
+framework module KSUIKit {
+  umbrella header "KSUIKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
