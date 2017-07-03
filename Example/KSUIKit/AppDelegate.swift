@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        KSUILabel.appearance().fonts = ["Regular": "Roboto-Light",
+        KSUITheme.appearance().fonts = ["Regular": "Roboto-Light",
                                         "Italic": "Palatino-Italic",
                                         "Bold": "Palatino-Bold",
                                         "BoldItalic": "Roboto-BoldItalic"]

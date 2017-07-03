@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -20,72 +20,85 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AWESOME..!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2G-Ye-Ikv" customClass="KSUILabel" customModule="KSUIKit">
-                                <rect key="frame" x="46.5" y="264" width="227" height="41.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Awesome" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBN-ZH-w3c" customClass="KSUILabel" customModule="KSUIKit">
+                                <rect key="frame" x="16" y="36" width="288" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                        <color key="value" red="0.82745098039999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="fontType" value="BoldItalic"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontType" value="Regular"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
-                                        <real key="value" value="36"/>
+                                        <real key="value" value="16"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2XE-7j-7AU">
-                                <rect key="frame" x="16" y="476" width="136" height="30"/>
-                                <state key="normal" title="Regular"/>
-                                <connections>
-                                    <action selector="setRegular:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zLq-dD-eyO"/>
-                                </connections>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Placeholder" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oXm-iy-eYx" customClass="KSUITextField" customModule="KSUIKit">
+                                <rect key="frame" x="16" y="70.5" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontType" value="Bold"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2bA-fd-UMA" customClass="KSUISegmentedControl" customModule="KSUIKit">
+                                <rect key="frame" x="16" y="116.5" width="288" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="normalFontType" value="Regular"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="highlightedFontType" value="Italic"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="selectedFontType" value="Bold"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="disabledFontType" value="BoldItalic"/>
+                                </userDefinedRuntimeAttributes>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwK-Wh-AVm" customClass="KSUIButton" customModule="KSUIKit">
+                                <rect key="frame" x="16" y="160.5" width="136" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontType" value="Regular"/>
+                                </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oh-YQ-nDI">
-                                <rect key="frame" x="16" y="522" width="136" height="30"/>
-                                <state key="normal" title="Bold"/>
-                                <connections>
-                                    <action selector="setBold:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1oS-bH-nZF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAE-fn-cUw">
-                                <rect key="frame" x="168" y="522" width="136" height="30"/>
-                                <state key="normal" title="BoldItalic"/>
-                                <connections>
-                                    <action selector="setBoldItalic:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6ks-vD-pqJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILx-uZ-aYP">
-                                <rect key="frame" x="168" y="476" width="136" height="30"/>
-                                <state key="normal" title="Italic"/>
-                                <connections>
-                                    <action selector="setItalic:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5M7-Vf-pSM"/>
-                                </connections>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgY-5T-YmV" customClass="KSUIButton" customModule="KSUIKit">
+                                <rect key="frame" x="168" y="160.5" width="136" height="30"/>
+                                <state key="normal" title="Disabled"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontType" value="Regular"/>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ILx-uZ-aYP" firstAttribute="width" secondItem="2XE-7j-7AU" secondAttribute="width" id="0SD-KG-wpI"/>
-                            <constraint firstItem="ILx-uZ-aYP" firstAttribute="leading" secondItem="2XE-7j-7AU" secondAttribute="trailing" constant="16" id="1Ye-MU-nxR"/>
-                            <constraint firstItem="KAE-fn-cUw" firstAttribute="width" secondItem="7oh-YQ-nDI" secondAttribute="width" id="3mI-Hl-yHR"/>
-                            <constraint firstItem="N2G-Ye-Ikv" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="4mw-GU-Gp1"/>
-                            <constraint firstItem="KAE-fn-cUw" firstAttribute="top" secondItem="ILx-uZ-aYP" secondAttribute="bottom" constant="16" id="7p2-Uv-3ZG"/>
-                            <constraint firstItem="N2G-Ye-Ikv" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="9KB-ag-kTp"/>
-                            <constraint firstAttribute="trailing" secondItem="ILx-uZ-aYP" secondAttribute="trailing" constant="16" id="EuG-AQ-Qdd"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="KAE-fn-cUw" secondAttribute="bottom" constant="16" id="MFM-OH-Q8B"/>
-                            <constraint firstItem="KAE-fn-cUw" firstAttribute="leading" secondItem="7oh-YQ-nDI" secondAttribute="trailing" constant="16" id="RRB-hL-bzi"/>
-                            <constraint firstItem="7oh-YQ-nDI" firstAttribute="top" secondItem="2XE-7j-7AU" secondAttribute="bottom" constant="16" id="SIw-Wv-Xl8"/>
-                            <constraint firstItem="KAE-fn-cUw" firstAttribute="leading" secondItem="7oh-YQ-nDI" secondAttribute="trailing" constant="16" id="ZVK-ND-xYy"/>
-                            <constraint firstItem="ILx-uZ-aYP" firstAttribute="leading" secondItem="2XE-7j-7AU" secondAttribute="trailing" constant="16" id="ZY5-cS-DBU"/>
-                            <constraint firstAttribute="trailing" secondItem="KAE-fn-cUw" secondAttribute="trailing" constant="16" id="ab9-W3-zbN"/>
-                            <constraint firstItem="2XE-7j-7AU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="dLj-Ag-gcR"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="7oh-YQ-nDI" secondAttribute="bottom" constant="16" id="rAm-Bo-YSR"/>
-                            <constraint firstItem="7oh-YQ-nDI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="smQ-p0-7eM"/>
+                            <constraint firstItem="2bA-fd-UMA" firstAttribute="top" secondItem="oXm-iy-eYx" secondAttribute="bottom" constant="16" id="5z2-4C-nbX"/>
+                            <constraint firstItem="hwK-Wh-AVm" firstAttribute="top" secondItem="2bA-fd-UMA" secondAttribute="bottom" constant="16" id="9pa-fD-Ii6"/>
+                            <constraint firstAttribute="trailing" secondItem="bgY-5T-YmV" secondAttribute="trailing" constant="16" id="M30-gF-1my"/>
+                            <constraint firstItem="bBN-ZH-w3c" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="16" id="NO1-mj-tM0"/>
+                            <constraint firstItem="bgY-5T-YmV" firstAttribute="width" secondItem="hwK-Wh-AVm" secondAttribute="width" id="U4V-Gv-5SH"/>
+                            <constraint firstItem="hwK-Wh-AVm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="Uos-gJ-2Do"/>
+                            <constraint firstAttribute="trailing" secondItem="oXm-iy-eYx" secondAttribute="trailing" constant="16" id="V2F-ld-ESK"/>
+                            <constraint firstItem="bBN-ZH-w3c" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="X6b-ok-bSe"/>
+                            <constraint firstItem="oXm-iy-eYx" firstAttribute="top" secondItem="bBN-ZH-w3c" secondAttribute="bottom" constant="16" id="a4j-2F-QAM"/>
+                            <constraint firstAttribute="trailing" secondItem="bBN-ZH-w3c" secondAttribute="trailing" constant="16" id="cdG-is-aah"/>
+                            <constraint firstItem="bgY-5T-YmV" firstAttribute="top" secondItem="2bA-fd-UMA" secondAttribute="bottom" constant="16" id="clg-sp-ITf"/>
+                            <constraint firstItem="2bA-fd-UMA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="esT-zq-sFi"/>
+                            <constraint firstAttribute="trailing" secondItem="2bA-fd-UMA" secondAttribute="trailing" constant="16" id="pMY-nh-Jq5"/>
+                            <constraint firstItem="bgY-5T-YmV" firstAttribute="leading" secondItem="hwK-Wh-AVm" secondAttribute="trailing" constant="16" id="tvd-bs-4rn"/>
+                            <constraint firstItem="oXm-iy-eYx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="x8s-Er-GfC"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="lblText" destination="N2G-Ye-Ikv" id="RiR-5v-eT1"/>
+                        <outlet property="lblText" destination="bBN-ZH-w3c" id="Izh-JT-oI5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
