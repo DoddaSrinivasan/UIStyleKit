@@ -10,12 +10,42 @@ import UIKit
 
 class KSUIButton: UIButton {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    @IBInspectable public var fontSize: CGFloat = 16 {
+        didSet {
+            setInspectables()
+        }
     }
-    */
+    
+    @IBInspectable public var fontType: String = "" {
+        didSet {
+            setInspectables()
+        }
+    }
+    
+    required public init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)!
+        self.setInspectables()
+        
+    }
+    
+    override public init(frame: CGRect) {
+        super.init(frame: frame)
+        self.setInspectables()
+    }
+    
+    override public func draw(_ rect: CGRect) {
+        super.draw(rect)
+        setInspectables()
+    }
+    
+    override public func prepareForInterfaceBuilder() {
+        setInspectables()
+    }
+    
+    override func setInspectables(){
+        self.titleLabel?.font = UIFont.init(name: font(fontType),
+                                            size: fontSize)
+    }
+
 
 }

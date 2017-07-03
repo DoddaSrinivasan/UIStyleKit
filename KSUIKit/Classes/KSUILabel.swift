@@ -11,14 +11,6 @@ import UIKit
 @IBDesignable
 public class KSUILabel: UILabel {
     
-    dynamic public var fonts: [String: String] = [:]
-
-    @IBInspectable public var color: UIColor = .black {
-        didSet {
-            setInspectables()
-        }
-    }
-    
     @IBInspectable public var fontSize: CGFloat = 16 {
         didSet {
             setInspectables()
@@ -51,21 +43,9 @@ public class KSUILabel: UILabel {
         setInspectables()
     }
     
-    func setInspectables(){
-        self.textColor = self.color
+    override func setInspectables(){
         self.font = UIFont.init(name: font(fontType),
                                 size: fontSize)
     }
     
-    func font(_ type: String) -> String{
-        var fontName = "Helvetica"
-        for key: String in KSUILabel.appearance().fonts.keys {
-            if(key.lowercased() == type.lowercased()){
-                fontName = KSUILabel.appearance().fonts[key]!
-                break
-            }
-        }
-        return fontName
-    }
-
 }
