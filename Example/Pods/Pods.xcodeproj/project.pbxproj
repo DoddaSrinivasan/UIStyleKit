@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1404FCC2366C96CB8EAE0D786AF51C0F /* KSUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B92C74509BF8EA309B6A64CE6819D9 /* KSUIKit-dummy.m */; };
 		18ADAB618988539B36918E461CB9D866 /* Pods-KSUIKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D2802ADA41902D97189F1846765E627 /* Pods-KSUIKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3060B5711F161B3100DF4ECE /* KSUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3060B5701F161B3100DF4ECE /* KSUIView.swift */; };
 		31B913021A20DB85892E965F26B25FFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		5114092233061FAD5AED362C9099BD5C /* KSUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47647AD5FCD7557037447070BF25904F /* KSUILabel.swift */; };
 		52C0898FD3A353C51E7135F23A3EFA6A /* KSUIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B88196B6649C622F0707EF7A8FAD82 /* KSUIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -39,6 +40,7 @@
 		08267A89FBD1332764129222FF8627BE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C0ED2F3CFFB0E6AF9F2BCF411286273 /* KSUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KSUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE90B5A39DAC221B41296E1D17A0C73 /* KSUISegmentedControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KSUISegmentedControl.swift; sourceTree = "<group>"; };
+		3060B5701F161B3100DF4ECE /* KSUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSUIView.swift; sourceTree = "<group>"; };
 		308FE13845E8C8EDE81930DFF0FB86F6 /* Pods-KSUIKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KSUIKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		32C6BE8E9E7A0742C976FEE5C6AE6CD8 /* KSUITextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KSUITextField.swift; sourceTree = "<group>"; };
 		3C253877A707269C3B08B9893B6530C2 /* Pods-KSUIKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KSUIKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 				2AE90B5A39DAC221B41296E1D17A0C73 /* KSUISegmentedControl.swift */,
 				32C6BE8E9E7A0742C976FEE5C6AE6CD8 /* KSUITextField.swift */,
 				E5B8E8F1047F091788CD81EDE75881F3 /* KSUITheme.swift */,
+				3060B5701F161B3100DF4ECE /* KSUIView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				5114092233061FAD5AED362C9099BD5C /* KSUILabel.swift in Sources */,
 				C57810E40C273440AA0AA52EEF30334D /* KSUISegmentedControl.swift in Sources */,
 				C299B9F54FE611A0D135B6701F639183 /* KSUITextField.swift in Sources */,
+				3060B5711F161B3100DF4ECE /* KSUIView.swift in Sources */,
 				D2A15EF9F283BDC276F63AD123156C63 /* KSUITheme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

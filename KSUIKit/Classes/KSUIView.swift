@@ -1,28 +1,15 @@
 //
-//  KSUILabel.swift
+//  KSUIView.swift
 //  Pods
 //
-//  Created by Srinivasan Dodda on 23/06/17.
+//  Created by Srinivasan Dodda on 12/07/17.
 //
 //
 
 import UIKit
 
-@IBDesignable
-public class KSUILabel: UILabel {
-    
-    @IBInspectable public var fontSize: CGFloat = 16 {
-        didSet {
-            setInspectables()
-        }
-    }
-    
-    @IBInspectable public var fontType: String = "" {
-        didSet {
-            setInspectables()
-        }
-    }
-    
+class KSUIView: UIView {
+
     @IBInspectable public var colorType: String? {
         didSet {
             setInspectables()
@@ -50,12 +37,9 @@ public class KSUILabel: UILabel {
     }
     
     override func setInspectables(){
-        self.font = UIFont.init(name: font(fontType),
-                                size: fontSize)
-        
-        if let _ = colorType {
-         	self.textColor = color(colorType!) ?? UIColor.black
+        if let _ = colorType{
+         	self.backgroundColor = color(colorType!) ?? UIColor.white   
         }
     }
-    
+
 }

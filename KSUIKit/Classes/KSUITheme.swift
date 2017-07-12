@@ -35,7 +35,7 @@ extension UIView {
     }
     
     internal func color(_ type: String) -> UIColor {
-        var color = UIApplication.shared.delegate?.window??.tintColor ?? UIColor.black
+        var color = UIColor.white
         
         for key: String in KSUITheme.appearance().colors.keys {
             if(key.lowercased() == type.lowercased()){

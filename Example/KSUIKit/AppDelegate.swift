@@ -25,7 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         KSUITheme.appearance().colors = ["positive" : UIColor(rgb: 0x387ef5),
                                          "balanced" : UIColor(rgb: 0x33cd5f),
                                          "energized" : UIColor(rgb: 0xffc900),
-                                         "assertive" : UIColor(rgb: 0xef473a)]
+                                         "assertive" : UIColor(rgb: 0xef473a),
+                                         "white" : UIColor.white]
         
         UIApplication.shared.statusBarStyle = .lightContent
         let navBarFont = UIFont.init(name: "Palatino-Bold",size: 20)!
