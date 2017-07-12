@@ -22,19 +22,19 @@ class KSUISegmentedControl: UISegmentedControl {
         }
     }
     
-    @IBInspectable public var highlightedFontType: String = "" {
+    @IBInspectable public var highlightedFontType: String? {
         didSet {
             setInspectables()
         }
     }
     
-    @IBInspectable public var selectedFontType: String = "" {
+    @IBInspectable public var selectedFontType: String? {
         didSet {
             setInspectables()
         }
     }
     
-    @IBInspectable public var disabledFontType: String = "" {
+    @IBInspectable public var disabledFontType: String? {
         didSet {
             setInspectables()
         }
@@ -61,22 +61,22 @@ class KSUISegmentedControl: UISegmentedControl {
     }
     
     override func setInspectables(){
-        self.setTitleTextAttributes(self.fontAttributesFor(type: normalFontType) as! [AnyHashable : Any],
+        self.setTitleTextAttributes(self.fontAttributesFor(type: normalFontType),
                                     for: .normal)
         
-        self.setTitleTextAttributes(self.fontAttributesFor(type: highlightedFontType) as! [AnyHashable : Any],
+        self.setTitleTextAttributes(self.fontAttributesFor(type: highlightedFontType ?? normalFontType),
                                     for: .highlighted)
         
-        self.setTitleTextAttributes(self.fontAttributesFor(type: selectedFontType) as! [AnyHashable : Any],
+        self.setTitleTextAttributes(self.fontAttributesFor(type: selectedFontType ?? normalFontType),
                                     for: .selected)
         
-        self.setTitleTextAttributes(self.fontAttributesFor(type: disabledFontType) as! [AnyHashable : Any],
+        self.setTitleTextAttributes(self.fontAttributesFor(type: disabledFontType ?? normalFontType),
                                     for: .disabled)
     }
     
-    func fontAttributesFor(type: String) -> NSDictionary{
+    func fontAttributesFor(type: String) -> [AnyHashable : Any]{
         let font = UIFont(name: self.font(type), size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)
-        return NSDictionary(object: font, forKey: NSFontAttributeName as NSCopying)
+        return NSDictionary(object: font, forKey: NSFontAttributeName as NSCopying) as! [AnyHashable: Any]
     }
 
 }

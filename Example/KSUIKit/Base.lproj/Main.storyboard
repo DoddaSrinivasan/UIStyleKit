@@ -581,10 +581,7 @@
                                     <segment title="Second"/>
                                 </segments>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="normalFontType" value="Regular"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="highlightedFontType" value="Regular"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="selectedFontType" value="BoldItalic"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="disabledFontType" value="BoldItalic"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="normalFontType" value="Bold"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
                                         <real key="value" value="16"/>
                                     </userDefinedRuntimeAttribute>
