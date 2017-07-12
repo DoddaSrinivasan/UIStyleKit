@@ -10,8 +10,6 @@ import UIKit
 import KSUIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var lblText: KSUILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

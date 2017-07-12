@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="03N-aq-xBK">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -8,20 +8,125 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--KSUIKit-->
+        <scene sceneID="dcf-HB-fyA">
+            <objects>
+                <tableViewController id="tuC-tp-ate" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="lJ7-AN-KT3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="gga-VE-atl">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Label" textLabel="cfU-eb-fX4" style="IBUITableViewCellStyleDefault" id="Hzo-gA-BZu">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hzo-gA-BZu" id="8Qi-5N-V5M">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cfU-eb-fX4">
+                                                    <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="vXZ-lx-hvc" kind="show" id="i2Z-0a-0Kl"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Button" textLabel="KWu-Fk-oMw" style="IBUITableViewCellStyleDefault" id="6zL-57-l30">
+                                        <rect key="frame" x="0.0" y="44" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6zL-57-l30" id="4v8-Oe-n0P">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Button" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KWu-Fk-oMw">
+                                                    <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="oFR-GC-YAy" kind="show" id="QQb-xc-OdS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextField" textLabel="a6W-Fv-Z2N" style="IBUITableViewCellStyleDefault" id="O17-DU-JEk">
+                                        <rect key="frame" x="0.0" y="88" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="O17-DU-JEk" id="MI5-VW-ChP">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="TextField" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="a6W-Fv-Z2N">
+                                                    <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="eLE-nl-hWQ" kind="show" id="1jd-IW-zh6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SegmentedControl" textLabel="XYW-dc-Uct" style="IBUITableViewCellStyleDefault" id="L5X-vv-G3y">
+                                        <rect key="frame" x="0.0" y="132" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="L5X-vv-G3y" id="vdz-wq-HtX">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="SegmentedControl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XYW-dc-Uct">
+                                                    <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="uPb-4d-0PH" kind="show" id="15M-W9-McG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="tuC-tp-ate" id="QWV-rz-JMz"/>
+                            <outlet property="delegate" destination="tuC-tp-ate" id="W3y-x4-ULw"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="KSUIKit" id="zJD-pB-o1m"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZK-Mt-Eeb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-994" y="708"/>
+        </scene>
+        <!--Lables-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="KSUIKit_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Lables" id="vXZ-lx-hvc" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Awesome" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBN-ZH-w3c" customClass="KSUILabel" customModule="KSUIKit">
-                                <rect key="frame" x="16" y="36" width="288" height="18.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm roboto light" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBN-ZH-w3c" customClass="KSUILabel" customModule="KSUIKit">
+                                <rect key="frame" x="16" y="30" width="288" height="19"/>
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -32,8 +137,211 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Placeholder" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oXm-iy-eYx" customClass="KSUITextField" customModule="KSUIKit">
-                                <rect key="frame" x="16" y="70.5" width="288" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm roboto bold italic" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1m-TC-wu4" customClass="KSUILabel" customModule="KSUIKit">
+                                <rect key="frame" x="16" y="79" width="288" height="19"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontType" value="BoldItalic"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm palatino bold" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCW-Du-MzN" customClass="KSUILabel" customModule="KSUIKit">
+                                <rect key="frame" x="16" y="128" width="288" height="19"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontType" value="Bold"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm palatino Italic" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaA-oQ-hkb" customClass="KSUILabel" customModule="KSUIKit">
+                                <rect key="frame" x="16" y="177" width="288" height="19"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontType" value="Italic"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eaA-oQ-hkb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="0Nv-TY-Ihy"/>
+                            <constraint firstItem="Z1m-TC-wu4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="7DS-5V-Cg5"/>
+                            <constraint firstItem="eaA-oQ-hkb" firstAttribute="top" secondItem="tCW-Du-MzN" secondAttribute="bottom" constant="30" id="FZ1-ft-17e"/>
+                            <constraint firstAttribute="trailing" secondItem="Z1m-TC-wu4" secondAttribute="trailing" constant="16" id="IO0-3R-Wdl"/>
+                            <constraint firstItem="bBN-ZH-w3c" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="NO1-mj-tM0"/>
+                            <constraint firstItem="tCW-Du-MzN" firstAttribute="top" secondItem="Z1m-TC-wu4" secondAttribute="bottom" constant="30" id="Tqc-8A-xYO"/>
+                            <constraint firstItem="Z1m-TC-wu4" firstAttribute="top" secondItem="bBN-ZH-w3c" secondAttribute="bottom" constant="30" id="V0N-IR-NkV"/>
+                            <constraint firstItem="bBN-ZH-w3c" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="X6b-ok-bSe"/>
+                            <constraint firstAttribute="trailing" secondItem="bBN-ZH-w3c" secondAttribute="trailing" constant="16" id="cdG-is-aah"/>
+                            <constraint firstAttribute="trailing" secondItem="eaA-oQ-hkb" secondAttribute="trailing" constant="16" id="dfv-GB-wnC"/>
+                            <constraint firstItem="tCW-Du-MzN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="mBf-GX-Sgc"/>
+                            <constraint firstAttribute="trailing" secondItem="tCW-Du-MzN" secondAttribute="trailing" constant="16" id="vYg-q8-6qz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="645" y="-1306"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BFK-vK-Ck4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="03N-aq-xBK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="URD-mT-ZHI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.043137254899999998" green="0.19215686269999999" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tuC-tp-ate" kind="relationship" relationship="rootViewController" id="dkj-Br-uBK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DUj-dw-PrM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1871" y="708"/>
+        </scene>
+        <!--Buttons-->
+        <scene sceneID="s2Q-Sa-W1W">
+            <objects>
+                <viewController title="Buttons" id="oFR-GC-YAy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AYx-3S-JEs"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vnu-gV-sR6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q2x-1i-n2E">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="viX-iq-Gvb" customClass="KSUIButton" customModule="KSUIKit">
+                                <rect key="frame" x="16" y="30" width="288" height="30"/>
+                                <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Roboto Light">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontType" value="Regular"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHk-6a-heI" customClass="KSUIButton" customModule="KSUIKit">
+                                <rect key="frame" x="16" y="90" width="288" height="30"/>
+                                <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Roboto Bold Italic">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontType" value="BoldItalic"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdp-GJ-rmh" customClass="KSUIButton" customModule="KSUIKit">
+                                <rect key="frame" x="16" y="150" width="288" height="30"/>
+                                <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Palatino Bold">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontType" value="Bold"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLw-9t-L0K" customClass="KSUIButton" customModule="KSUIKit">
+                                <rect key="frame" x="16" y="210" width="288" height="30"/>
+                                <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Palatino Italic">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontType" value="Italic"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lHk-6a-heI" firstAttribute="leading" secondItem="Q2x-1i-n2E" secondAttribute="leading" constant="16" id="0Wu-7O-JRI"/>
+                            <constraint firstAttribute="trailing" secondItem="lHk-6a-heI" secondAttribute="trailing" constant="16" id="2YV-Ns-Igx"/>
+                            <constraint firstItem="XLw-9t-L0K" firstAttribute="leading" secondItem="Q2x-1i-n2E" secondAttribute="leading" constant="16" id="Bhs-lH-aMu"/>
+                            <constraint firstAttribute="trailing" secondItem="cdp-GJ-rmh" secondAttribute="trailing" constant="16" id="C4Y-bP-eSC"/>
+                            <constraint firstItem="viX-iq-Gvb" firstAttribute="top" secondItem="AYx-3S-JEs" secondAttribute="bottom" constant="30" id="Il6-JY-Iin"/>
+                            <constraint firstAttribute="trailing" secondItem="viX-iq-Gvb" secondAttribute="trailing" constant="16" id="IuB-FW-d4V"/>
+                            <constraint firstItem="cdp-GJ-rmh" firstAttribute="top" secondItem="lHk-6a-heI" secondAttribute="bottom" constant="30" id="M31-dh-h1H"/>
+                            <constraint firstItem="viX-iq-Gvb" firstAttribute="leading" secondItem="Q2x-1i-n2E" secondAttribute="leading" constant="16" id="Sjd-VY-lCC"/>
+                            <constraint firstItem="cdp-GJ-rmh" firstAttribute="leading" secondItem="Q2x-1i-n2E" secondAttribute="leading" constant="16" id="eKT-eM-ukT"/>
+                            <constraint firstItem="XLw-9t-L0K" firstAttribute="top" secondItem="cdp-GJ-rmh" secondAttribute="bottom" constant="30" id="edf-85-AE9"/>
+                            <constraint firstItem="lHk-6a-heI" firstAttribute="top" secondItem="viX-iq-Gvb" secondAttribute="bottom" constant="30" id="ik6-Nr-a4B"/>
+                            <constraint firstAttribute="trailing" secondItem="XLw-9t-L0K" secondAttribute="trailing" constant="16" id="vCQ-M7-HUv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="60j-oE-kZ5" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="645" y="-632"/>
+        </scene>
+        <!--TextFields-->
+        <scene sceneID="zfW-y7-285">
+            <objects>
+                <viewController title="TextFields" id="eLE-nl-hWQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xV9-he-B1n"/>
+                        <viewControllerLayoutGuide type="bottom" id="O7U-1j-Zaa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H9V-jI-r52">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Roboto Light " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xXj-T4-QkT" customClass="KSUITextField" customModule="KSUIKit">
+                                <rect key="frame" x="16" y="30" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontType" value="Regular"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Roboto Bold Italic " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1wp-4T-aGH" customClass="KSUITextField" customModule="KSUIKit">
+                                <rect key="frame" x="16" y="90" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontType" value="BoldItalic"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Palatino Bold " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="165-uy-XHp" customClass="KSUITextField" customModule="KSUIKit">
+                                <rect key="frame" x="16" y="150" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -44,66 +352,99 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2bA-fd-UMA" customClass="KSUISegmentedControl" customModule="KSUIKit">
-                                <rect key="frame" x="16" y="116.5" width="288" height="29"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Palatino Italic " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kPU-W5-Cx2" customClass="KSUITextField" customModule="KSUIKit">
+                                <rect key="frame" x="16" y="210" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontType" value="Italic"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kPU-W5-Cx2" firstAttribute="leading" secondItem="H9V-jI-r52" secondAttribute="leading" constant="16" id="0lK-xw-LR2"/>
+                            <constraint firstAttribute="trailing" secondItem="1wp-4T-aGH" secondAttribute="trailing" constant="16" id="4RB-hM-mXw"/>
+                            <constraint firstItem="xXj-T4-QkT" firstAttribute="leading" secondItem="H9V-jI-r52" secondAttribute="leading" constant="16" id="Jg5-We-E6d"/>
+                            <constraint firstAttribute="trailing" secondItem="kPU-W5-Cx2" secondAttribute="trailing" constant="16" id="TCY-dN-6LY"/>
+                            <constraint firstItem="165-uy-XHp" firstAttribute="leading" secondItem="H9V-jI-r52" secondAttribute="leading" constant="16" id="Vcl-IG-sen"/>
+                            <constraint firstItem="kPU-W5-Cx2" firstAttribute="top" secondItem="165-uy-XHp" secondAttribute="bottom" constant="30" id="bXq-2J-9SG"/>
+                            <constraint firstItem="165-uy-XHp" firstAttribute="top" secondItem="1wp-4T-aGH" secondAttribute="bottom" constant="30" id="cq4-4r-Dcb"/>
+                            <constraint firstAttribute="trailing" secondItem="165-uy-XHp" secondAttribute="trailing" constant="16" id="efh-Ba-uSK"/>
+                            <constraint firstAttribute="trailing" secondItem="xXj-T4-QkT" secondAttribute="trailing" constant="16" id="hSj-L1-qb5"/>
+                            <constraint firstItem="1wp-4T-aGH" firstAttribute="top" secondItem="xXj-T4-QkT" secondAttribute="bottom" constant="30" id="pg6-SS-sdT"/>
+                            <constraint firstItem="1wp-4T-aGH" firstAttribute="leading" secondItem="H9V-jI-r52" secondAttribute="leading" constant="16" id="uOp-KW-nD8"/>
+                            <constraint firstItem="xXj-T4-QkT" firstAttribute="top" secondItem="xV9-he-B1n" secondAttribute="bottom" constant="30" id="uq6-hY-Ode"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="npE-T9-iHi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="645" y="42"/>
+        </scene>
+        <!--SegmentedControl-->
+        <scene sceneID="R6b-fB-EBa">
+            <objects>
+                <viewController title="SegmentedControl" id="uPb-4d-0PH" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4hD-zf-MbM"/>
+                        <viewControllerLayoutGuide type="bottom" id="MnZ-cl-mJ4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="22v-5c-0nE">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="t8F-eR-fuF" customClass="KSUISegmentedControl" customModule="KSUIKit">
+                                <rect key="frame" x="16" y="30" width="288" height="29"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="normalFontType" value="Regular"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="highlightedFontType" value="Italic"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="selectedFontType" value="Bold"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="highlightedFontType" value="Regular"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="selectedFontType" value="BoldItalic"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="disabledFontType" value="BoldItalic"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwK-Wh-AVm" customClass="KSUIButton" customModule="KSUIKit">
-                                <rect key="frame" x="16" y="160.5" width="136" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Vn4-q1-s3l" customClass="KSUISegmentedControl" customModule="KSUIKit">
+                                <rect key="frame" x="16" y="88" width="288" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
                                 <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="normalFontType" value="Italic"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="highlightedFontType" value="Italic"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="selectedFontType" value="Bold"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="disabledFontType" value="Bold"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
                                         <real key="value" value="16"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="fontType" value="Regular"/>
                                 </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgY-5T-YmV" customClass="KSUIButton" customModule="KSUIKit">
-                                <rect key="frame" x="168" y="160.5" width="136" height="30"/>
-                                <state key="normal" title="Disabled"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
-                                        <real key="value" value="16"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="fontType" value="Regular"/>
-                                </userDefinedRuntimeAttributes>
-                            </button>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="2bA-fd-UMA" firstAttribute="top" secondItem="oXm-iy-eYx" secondAttribute="bottom" constant="16" id="5z2-4C-nbX"/>
-                            <constraint firstItem="hwK-Wh-AVm" firstAttribute="top" secondItem="2bA-fd-UMA" secondAttribute="bottom" constant="16" id="9pa-fD-Ii6"/>
-                            <constraint firstAttribute="trailing" secondItem="bgY-5T-YmV" secondAttribute="trailing" constant="16" id="M30-gF-1my"/>
-                            <constraint firstItem="bBN-ZH-w3c" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="16" id="NO1-mj-tM0"/>
-                            <constraint firstItem="bgY-5T-YmV" firstAttribute="width" secondItem="hwK-Wh-AVm" secondAttribute="width" id="U4V-Gv-5SH"/>
-                            <constraint firstItem="hwK-Wh-AVm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="Uos-gJ-2Do"/>
-                            <constraint firstAttribute="trailing" secondItem="oXm-iy-eYx" secondAttribute="trailing" constant="16" id="V2F-ld-ESK"/>
-                            <constraint firstItem="bBN-ZH-w3c" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="X6b-ok-bSe"/>
-                            <constraint firstItem="oXm-iy-eYx" firstAttribute="top" secondItem="bBN-ZH-w3c" secondAttribute="bottom" constant="16" id="a4j-2F-QAM"/>
-                            <constraint firstAttribute="trailing" secondItem="bBN-ZH-w3c" secondAttribute="trailing" constant="16" id="cdG-is-aah"/>
-                            <constraint firstItem="bgY-5T-YmV" firstAttribute="top" secondItem="2bA-fd-UMA" secondAttribute="bottom" constant="16" id="clg-sp-ITf"/>
-                            <constraint firstItem="2bA-fd-UMA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="esT-zq-sFi"/>
-                            <constraint firstAttribute="trailing" secondItem="2bA-fd-UMA" secondAttribute="trailing" constant="16" id="pMY-nh-Jq5"/>
-                            <constraint firstItem="bgY-5T-YmV" firstAttribute="leading" secondItem="hwK-Wh-AVm" secondAttribute="trailing" constant="16" id="tvd-bs-4rn"/>
-                            <constraint firstItem="oXm-iy-eYx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="x8s-Er-GfC"/>
+                            <constraint firstAttribute="trailing" secondItem="Vn4-q1-s3l" secondAttribute="trailing" constant="16" id="0c8-Iv-nWb"/>
+                            <constraint firstAttribute="trailing" secondItem="t8F-eR-fuF" secondAttribute="trailing" constant="16" id="2W5-jp-xZV"/>
+                            <constraint firstItem="Vn4-q1-s3l" firstAttribute="leading" secondItem="22v-5c-0nE" secondAttribute="leading" constant="16" id="5iq-kN-Crw"/>
+                            <constraint firstItem="Vn4-q1-s3l" firstAttribute="top" secondItem="t8F-eR-fuF" secondAttribute="bottom" constant="30" id="Cza-qZ-lcy"/>
+                            <constraint firstItem="t8F-eR-fuF" firstAttribute="leading" secondItem="22v-5c-0nE" secondAttribute="leading" constant="16" id="bpB-gU-slf"/>
+                            <constraint firstItem="t8F-eR-fuF" firstAttribute="top" secondItem="4hD-zf-MbM" secondAttribute="bottom" constant="30" id="nZ5-Xl-tin"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="lblText" destination="bBN-ZH-w3c" id="Izh-JT-oI5"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I0v-9D-3Km" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-99.375" y="122.53521126760563"/>
+            <point key="canvasLocation" x="645" y="708"/>
         </scene>
     </scenes>
 </document>

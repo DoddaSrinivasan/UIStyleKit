@@ -43,9 +43,7 @@ class KSUIButton: UIButton {
     }
     
     override func setInspectables(){
-        self.titleLabel?.font = UIFont.init(name: font(fontType),
-                                            size: fontSize)
+        self.titleLabel?.font = UIFont.init(name: font(fontType), size: fontSize)
     }
-
 
 }
