@@ -22,12 +22,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                         "Bold": "Palatino-Bold",
                                         "BoldItalic": "Roboto-BoldItalic"]
         
+        KSUITheme.appearance().colors = ["positive" : UIColor(rgb: 0x387ef5),
+                                         "balanced" : UIColor(rgb: 0x33cd5f),
+                                         "energized" : UIColor(rgb: 0xffc900),
+                                         "assertive" : UIColor(rgb: 0xef473a)]
+        
         UIApplication.shared.statusBarStyle = .lightContent
-        let navBarFont = UIFont.init(name: "Roboto-BoldItalic",size: 20)!
+        let navBarFont = UIFont.init(name: "Palatino-Bold",size: 20)!
         UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName : navBarFont,
-                                                            NSForegroundColorAttributeName : UIColor.white]
+                                                            NSForegroundColorAttributeName : UIColor(rgb: 0xeeeeee)]
+        UINavigationBar.appearance().tintColor = UIColor(rgb: 0xeeeeee)
+        UINavigationBar.appearance().barTintColor = UIColor(rgb: 0x444444)
         
         return true
     }
 }
-

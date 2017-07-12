@@ -23,6 +23,12 @@ public class KSUILabel: UILabel {
         }
     }
     
+    @IBInspectable public var colorType: String = "" {
+        didSet {
+            setInspectables()
+        }
+    }
+    
     required public init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
         self.setInspectables()
@@ -46,6 +52,7 @@ public class KSUILabel: UILabel {
     override func setInspectables(){
         self.font = UIFont.init(name: font(fontType),
                                 size: fontSize)
+        self.textColor = color(colorType)
     }
     
 }
