@@ -21,11 +21,11 @@ extension UIView {
     
     }
     
-    internal func font(_ type: String) -> String? {
-        var fontName: String?
+    internal func font(_ type: String?) -> String {
+        var fontName = ""
         
         for key: String in KSUITheme.appearance().fonts.keys {
-            if(key.lowercased() == type.lowercased()){
+            if(key.lowercased() == type?.lowercased()){
                 fontName = KSUITheme.appearance().fonts[key]!
                 break
             }

@@ -16,7 +16,7 @@ class KSUISegmentedControl: UISegmentedControl {
         }
     }
     
-    @IBInspectable public var normalFontType: String? {
+    @IBInspectable public var normalFontType: String = "" {
         didSet {
             setInspectables()
         }
@@ -44,27 +44,24 @@ class KSUISegmentedControl: UISegmentedControl {
         self.setTitleTextAttributes(self.fontAttributesFor(type: normalFontType),
                                     for: .normal)
         
-        self.setTitleTextAttributes(self.fontAttributesFor(type: highlightedFontType),
+        self.setTitleTextAttributes(self.fontAttributesFor(type: highlightedFontType ?? normalFontType),
                                     for: .highlighted)
         
-        self.setTitleTextAttributes(self.fontAttributesFor(type: selectedFontType),
+        self.setTitleTextAttributes(self.fontAttributesFor(type: selectedFontType ?? normalFontType),
                                     for: .selected)
         
-        self.setTitleTextAttributes(self.fontAttributesFor(type: disabledFontType),
+        self.setTitleTextAttributes(self.fontAttributesFor(type: disabledFontType ?? normalFontType),
                                     for: .disabled)
     }
     
-    func fontAttributesFor(type: String?) -> [AnyHashable : Any]{
+    func fontAttributesFor(type: String) -> [AnyHashable : Any]{
         let font = fontFor(type)
         return NSDictionary(object: font, forKey: NSFontAttributeName as NSCopying) as! [AnyHashable: Any]
     }
     
-    private func fontFor(_ type: String?) -> UIFont {
-        if let _ = type, let fontName: String = font(type!) {
-            return UIFont.init(name: fontName, size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)
-        }
-        
-        return UIFont.systemFont(ofSize: fontSize)
+    private func fontFor(_ type: String) -> UIFont? {
+        let systemFont = UIFont.systemFont(ofSize: fontSize)
+        return UIFont.init(name: font(type), size: fontSize) ?? systemFont
     }
 
 }

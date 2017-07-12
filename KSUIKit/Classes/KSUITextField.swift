@@ -27,12 +27,12 @@ class KSUITextField: UITextField {
         self.font = font()
     }
     
-    private func font() -> UIFont {
-        if let _ = fontType, let fontName: String = font(fontType!) {
-            return UIFont.init(name: fontName, size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)
+    private func font() -> UIFont? {
+        guard fontType != nil else {
+            return self.font
         }
         
-        return self.font ?? UIFont.systemFont(ofSize: fontSize)
+        return UIFont.init(name: font(fontType), size: fontSize)
     }
 
 }

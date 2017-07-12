@@ -64,35 +64,35 @@ class KSUIButton: UIButton {
     
     // MARK: Private functions
     
-    private func font() -> UIFont {
-        if let _ = fontType, let fontName: String = font(fontType!) {
-            return UIFont.init(name: fontName, size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)
+    private func font() -> UIFont? {
+        guard fontType != nil else {
+            return self.titleLabel?.font
         }
         
-        return self.titleLabel?.font ?? UIFont.systemFont(ofSize: fontSize)
+        return UIFont.init(name: font(fontType), size: fontSize)        
     }
     
     private func color() -> UIColor {
-        if let _ = colorType {
-            return color(colorType!) ?? UIColor.black
+        guard colorType != nil else {
+            return self.titleColor(for: .normal) ?? UIColor.black
         }
         
-        return self.titleColor(for: .normal) ?? UIColor.black
+        return color(colorType!) ?? UIColor.black
     }
     
     private func bgColor() -> UIColor {
-        if let _ = bgColorType {
-            return color(bgColorType!) ?? UIColor.clear
+        guard bgColorType != nil else {
+            return self.titleColor(for: .normal) ?? UIColor.clear
         }
         
-        return self.backgroundColor ?? UIColor.white
+        return color(bgColorType!) ?? UIColor.clear
     }
 
     private func borderColor() -> UIColor {
-        if let _ = borderColorType {
-            return color(borderColorType!) ?? UIColor.clear
+        guard borderColorType != nil else {
+            return self.titleColor(for: .normal) ?? UIColor.clear
         }
         
-        return UIColor.black
+        return color(borderColorType!) ?? UIColor.clear
     }
 }
