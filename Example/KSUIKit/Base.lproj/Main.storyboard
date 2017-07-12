@@ -126,7 +126,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm roboto light" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBN-ZH-w3c" customClass="KSUILabel" customModule="KSUIKit">
-                                <rect key="frame" x="16" y="30" width="288" height="23"/>
+                                <rect key="frame" x="16" y="30" width="288" height="19"/>
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -139,7 +139,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm roboto bold italic" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1m-TC-wu4" customClass="KSUILabel" customModule="KSUIKit">
-                                <rect key="frame" x="16" y="83" width="288" height="23"/>
+                                <rect key="frame" x="16" y="79" width="288" height="19"/>
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -152,7 +152,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm palatino bold" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCW-Du-MzN" customClass="KSUILabel" customModule="KSUIKit">
-                                <rect key="frame" x="16" y="136" width="288" height="23"/>
+                                <rect key="frame" x="16" y="128" width="288" height="19"/>
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -165,7 +165,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm palatino Italic" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaA-oQ-hkb" customClass="KSUILabel" customModule="KSUIKit">
-                                <rect key="frame" x="16" y="189" width="288" height="23"/>
+                                <rect key="frame" x="16" y="177" width="288" height="19"/>
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -364,12 +364,12 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dba-48-Gga" customClass="KSUIButton" customModule="KSUIKit">
                                         <rect key="frame" x="168" y="228" width="136" height="30"/>
                                         <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Roboto Light"/>
+                                        <state key="normal" title="Roboto Bold Italic"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
                                                 <real key="value" value="16"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="fontType" value="Regular"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontType" value="BoldItalic"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="colorType" value="balanced"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="bgColorType" value="white"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="borderColorType" value="balanced"/>
@@ -384,12 +384,12 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gmc-mD-UkB" customClass="KSUIButton" customModule="KSUIKit">
                                         <rect key="frame" x="16" y="274" width="136" height="30"/>
                                         <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Roboto Light"/>
+                                        <state key="normal" title="Palatino Bold"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
                                                 <real key="value" value="16"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="fontType" value="Regular"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontType" value="Bold"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="colorType" value="energized"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="bgColorType" value="white"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="borderColorType" value="energized"/>
@@ -404,12 +404,12 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nG6-nx-oUL" customClass="KSUIButton" customModule="KSUIKit">
                                         <rect key="frame" x="168" y="274" width="136" height="30"/>
                                         <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Roboto Light"/>
+                                        <state key="normal" title="Palatino Italic"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
                                                 <real key="value" value="16"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="fontType" value="Regular"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontType" value="Italic"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="colorType" value="assertive"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="bgColorType" value="white"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="borderColorType" value="assertive"/>
@@ -560,7 +560,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="npE-T9-iHi" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="645" y="79"/>
+            <point key="canvasLocation" x="645" y="36"/>
         </scene>
         <!--SegmentedControl-->
         <scene sceneID="R6b-fB-EBa">

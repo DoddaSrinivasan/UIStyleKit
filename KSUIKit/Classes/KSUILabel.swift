@@ -17,7 +17,7 @@ public class KSUILabel: UILabel {
         }
     }
     
-    @IBInspectable public var fontType: String = "" {
+    @IBInspectable public var fontType: String? {
         didSet {
             setInspectables()
         }
@@ -29,33 +29,22 @@ public class KSUILabel: UILabel {
         }
     }
     
-    required public init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)!
-        self.setInspectables()
-        
-    }
-    
-    override public init(frame: CGRect) {
-        super.init(frame: frame)
-        self.setInspectables()
-    }
-    
-    override public func draw(_ rect: CGRect) {
-        super.draw(rect)
-        setInspectables()
-    }
-    
-    override public func prepareForInterfaceBuilder() {
-        setInspectables()
-    }
-    
     override func setInspectables(){
-        self.font = UIFont.init(name: font(fontType),
-                                size: fontSize)
+        self.font = font()
         
         if let _ = colorType {
-         	self.textColor = color(colorType!) ?? UIColor.black
+         	self.textColor = color(colorType!) ?? self.textColor
         }
+    }
+    
+    // MARK: Private function
+    
+    private func font() -> UIFont {
+        if let _ = fontType, let fontName: String = font(fontType!) {
+            return UIFont.init(name: fontName, size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)
+        }
+        
+        return self.font ?? UIFont.systemFont(ofSize: fontSize)
     }
     
 }

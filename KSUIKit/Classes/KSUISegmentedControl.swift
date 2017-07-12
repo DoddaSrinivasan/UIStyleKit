@@ -16,7 +16,7 @@ class KSUISegmentedControl: UISegmentedControl {
         }
     }
     
-    @IBInspectable public var normalFontType: String = "" {
+    @IBInspectable public var normalFontType: String? {
         didSet {
             setInspectables()
         }
@@ -40,43 +40,31 @@ class KSUISegmentedControl: UISegmentedControl {
         }
     }
     
-    required public init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)!
-        self.setInspectables()
-        
-    }
-    
-    override public init(frame: CGRect) {
-        super.init(frame: frame)
-        self.setInspectables()
-    }
-    
-    override public func draw(_ rect: CGRect) {
-        super.draw(rect)
-        setInspectables()
-    }
-    
-    override public func prepareForInterfaceBuilder() {
-        setInspectables()
-    }
-    
     override func setInspectables(){
         self.setTitleTextAttributes(self.fontAttributesFor(type: normalFontType),
                                     for: .normal)
         
-        self.setTitleTextAttributes(self.fontAttributesFor(type: highlightedFontType ?? normalFontType),
+        self.setTitleTextAttributes(self.fontAttributesFor(type: highlightedFontType),
                                     for: .highlighted)
         
-        self.setTitleTextAttributes(self.fontAttributesFor(type: selectedFontType ?? normalFontType),
+        self.setTitleTextAttributes(self.fontAttributesFor(type: selectedFontType),
                                     for: .selected)
         
-        self.setTitleTextAttributes(self.fontAttributesFor(type: disabledFontType ?? normalFontType),
+        self.setTitleTextAttributes(self.fontAttributesFor(type: disabledFontType),
                                     for: .disabled)
     }
     
-    func fontAttributesFor(type: String) -> [AnyHashable : Any]{
-        let font = UIFont(name: self.font(type), size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)
+    func fontAttributesFor(type: String?) -> [AnyHashable : Any]{
+        let font = fontFor(type)
         return NSDictionary(object: font, forKey: NSFontAttributeName as NSCopying) as! [AnyHashable: Any]
+    }
+    
+    private func fontFor(_ type: String?) -> UIFont {
+        if let _ = type, let fontName: String = font(type!) {
+            return UIFont.init(name: fontName, size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)
+        }
+        
+        return UIFont.systemFont(ofSize: fontSize)
     }
 
 }

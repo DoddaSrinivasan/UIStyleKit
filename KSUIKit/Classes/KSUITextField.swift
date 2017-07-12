@@ -17,35 +17,22 @@ class KSUITextField: UITextField {
         }
     }
     
-    @IBInspectable public var fontType: String = "" {
+    @IBInspectable public var fontType: String? {
         didSet {
             setInspectables()
         }
     }
     
-    required public init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)!
-        self.setInspectables()
-        
-    }
-    
-    override public init(frame: CGRect) {
-        super.init(frame: frame)
-        self.setInspectables()
-    }
-    
-    override public func draw(_ rect: CGRect) {
-        super.draw(rect)
-        setInspectables()
-    }
-    
-    override public func prepareForInterfaceBuilder() {
-        setInspectables()
-    }
-    
     override func setInspectables(){
-        self.font = UIFont.init(name: font(fontType),
-                                size: fontSize)
+        self.font = font()
+    }
+    
+    private func font() -> UIFont {
+        if let _ = fontType, let fontName: String = font(fontType!) {
+            return UIFont.init(name: fontName, size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)
+        }
+        
+        return self.font ?? UIFont.systemFont(ofSize: fontSize)
     }
 
 }

@@ -21,8 +21,8 @@ extension UIView {
     
     }
     
-    internal func font(_ type: String) -> String{
-        var fontName = "Helvetica"
+    internal func font(_ type: String) -> String? {
+        var fontName: String?
         
         for key: String in KSUITheme.appearance().fonts.keys {
             if(key.lowercased() == type.lowercased()){
@@ -34,8 +34,8 @@ extension UIView {
         return fontName
     }
     
-    internal func color(_ type: String) -> UIColor {
-        var color = UIColor.white
+    internal func color(_ type: String) -> UIColor? {
+        var color: UIColor?
         
         for key: String in KSUITheme.appearance().colors.keys {
             if(key.lowercased() == type.lowercased()){

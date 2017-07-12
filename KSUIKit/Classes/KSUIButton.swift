@@ -16,7 +16,7 @@ class KSUIButton: UIButton {
         }
     }
     
-    @IBInspectable public var fontType: String = "" {
+    @IBInspectable public var fontType: String? {
         didSet {
             setInspectables()
         }
@@ -52,28 +52,8 @@ class KSUIButton: UIButton {
         }
     }
     
-    required public init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)!
-        self.setInspectables()
-        
-    }
-    
-    override public init(frame: CGRect) {
-        super.init(frame: frame)
-        self.setInspectables()
-    }
-    
-    override public func draw(_ rect: CGRect) {
-        super.draw(rect)
-        setInspectables()
-    }
-    
-    override public func prepareForInterfaceBuilder() {
-        setInspectables()
-    }
-    
     override func setInspectables(){
-        self.titleLabel?.font = UIFont.init(name: font(fontType), size: fontSize)
+        self.titleLabel?.font = font()
         self.setTitleColor(color(), for: .normal)
         
         self.backgroundColor = bgColor()
@@ -84,15 +64,35 @@ class KSUIButton: UIButton {
     
     // MARK: Private functions
     
+    private func font() -> UIFont {
+        if let _ = fontType, let fontName: String = font(fontType!) {
+            return UIFont.init(name: fontName, size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)
+        }
+        
+        return self.titleLabel?.font ?? UIFont.systemFont(ofSize: fontSize)
+    }
+    
     private func color() -> UIColor {
-        return colorType != nil ? color(colorType!) : UIColor.black
+        if let _ = colorType {
+            return color(colorType!) ?? UIColor.black
+        }
+        
+        return self.titleColor(for: .normal) ?? UIColor.black
     }
     
     private func bgColor() -> UIColor {
-        return bgColorType != nil ? color(bgColorType!) : UIColor.white
+        if let _ = bgColorType {
+            return color(bgColorType!) ?? UIColor.clear
+        }
+        
+        return self.backgroundColor ?? UIColor.white
     }
 
     private func borderColor() -> UIColor {
-        return borderColorType != nil ? color(borderColorType!) : UIColor.clear
+        if let _ = borderColorType {
+            return color(borderColorType!) ?? UIColor.clear
+        }
+        
+        return UIColor.black
     }
 }
