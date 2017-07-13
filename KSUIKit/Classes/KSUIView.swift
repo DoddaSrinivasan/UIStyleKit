@@ -10,7 +10,7 @@ import UIKit
 
 class KSUIView: UIView {
 
-    @IBInspectable public var colorType: String? {
+    @IBInspectable public var bgColorType: String? {
         didSet {
             setInspectables()
         }
@@ -37,8 +37,8 @@ class KSUIView: UIView {
     }
     
     override func setInspectables(){
-        if let _ = colorType{
-         	self.backgroundColor = color(colorType!) ?? UIColor.white   
+        if let _ = bgColorType, let bgColor = color(bgColorType!){
+         	self.backgroundColor =  bgColor
         }
     }
 

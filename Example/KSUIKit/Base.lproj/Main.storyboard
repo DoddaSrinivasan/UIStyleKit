@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -97,6 +98,26 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="uPb-4d-0PH" kind="show" id="15M-W9-McG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SegmentedControl" textLabel="CH2-DH-xFe" style="IBUITableViewCellStyleDefault" id="jgx-SI-BYs">
+                                        <rect key="frame" x="0.0" y="176" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jgx-SI-BYs" id="Ijr-B7-Sb0">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="UIView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CH2-DH-xFe">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="11h-wv-MP8" kind="show" id="4V2-FV-75t"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -650,6 +671,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I0v-9D-3Km" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="645" y="708"/>
+        </scene>
+        <!--UIView-->
+        <scene sceneID="qKB-L8-B4z">
+            <objects>
+                <viewController title="UIView" id="11h-wv-MP8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Jj-eZ-cIZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xic-PT-TZN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pdU-Ub-e4B">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yAj-FU-zUt" customClass="KSUIView" customModule="KSUIKit">
+                                <rect key="frame" x="16" y="16" width="136" height="136"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yAj-FU-zUt" secondAttribute="height" multiplier="1:1" id="OOm-64-X4Z"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="bgColorType" value="positive"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DzU-Gr-ftx" customClass="KSUIView" customModule="KSUIKit">
+                                <rect key="frame" x="168" y="16" width="136" height="136"/>
+                                <color key="backgroundColor" red="0.82745098039999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DzU-Gr-ftx" secondAttribute="height" multiplier="1:1" id="S3I-KR-LMT"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="bgColorType" value="assertive"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yAj-FU-zUt" firstAttribute="top" secondItem="1Jj-eZ-cIZ" secondAttribute="bottom" constant="16" id="40o-VQ-kS6"/>
+                            <constraint firstItem="yAj-FU-zUt" firstAttribute="leading" secondItem="pdU-Ub-e4B" secondAttribute="leading" constant="16" id="BW3-ph-vRA"/>
+                            <constraint firstItem="DzU-Gr-ftx" firstAttribute="width" secondItem="yAj-FU-zUt" secondAttribute="width" id="Mm3-Bj-ZxU"/>
+                            <constraint firstItem="DzU-Gr-ftx" firstAttribute="leading" secondItem="yAj-FU-zUt" secondAttribute="trailing" constant="16" id="Ub8-GJ-XyF"/>
+                            <constraint firstItem="DzU-Gr-ftx" firstAttribute="top" secondItem="1Jj-eZ-cIZ" secondAttribute="bottom" constant="16" id="j5n-aA-7C2"/>
+                            <constraint firstAttribute="trailing" secondItem="DzU-Gr-ftx" secondAttribute="trailing" constant="16" id="qLr-LI-ciA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B2C-u5-wjD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="645" y="1500"/>
         </scene>
     </scenes>
 </document>
