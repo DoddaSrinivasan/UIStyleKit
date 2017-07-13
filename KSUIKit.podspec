@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KSUIKit'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Easily Configure and manage fonts and colours of UIComponents at a single place.'
   s.description      = <<-DESC
 iOS Storyboard (or Interface Builder) is an effective way of developing UI for the apps. Storyboard provides ways to change colour and fonts of UIComponents. Wow, thats really wonderful.
@@ -26,10 +26,10 @@ You could make use of UIAppearance. For example you could change the font and co
 Wouldn't it be great if we could still set these properties in storyboard but changing the font or theme doesnt need to change in storyboard. Sound's real needy right. Yeah, so thats what this library does.
                        DESC
 
-  s.homepage         = 'https://github.com/srinivasan.munna@gmail.com/KSUIKit'
+  s.homepage         = 'https://github.com/DoddaSrinivasan/KSUIKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'srinivasan.munna@gmail.com' => 'srinivasan.munna@gmail.com' }
-  s.source           = { :git => 'https://github.com/srinivasan.munna@gmail.com/KSUIKit.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/DoddaSrinivasan/KSUIKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://www.facebook.com/srinivasan.munna'
 
   s.ios.deployment_target = '8.0'
