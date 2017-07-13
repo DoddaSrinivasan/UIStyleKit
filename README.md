@@ -60,6 +60,9 @@ You will find that the changes are not reflecting in the StoryBoard, this is bec
 
 ## Documentation
 
+#### KSUIView
+- **bgColorType: String?**
+</br>nil value will set the one picked from color picker in Storyboard
 #### KSUILabel
 - **fontType: String?**
 </br>nil value will set the one picked from font picker in Storyboard
@@ -106,6 +109,23 @@ You will find that the changes are not reflecting in the StoryBoard, this is bec
 - **borderWidth: CGFloat** default = 0
 
 - **cornerRadius: CGFloat** default = 0
+
+#### KSUISegmentedControl
+
+- **fontSize: CGFloat** default = 16
+</br>will not effect if **fontType** is nil
+
+- **normalFontType: String?**
+</br>nil value will set system font with size **fontSize**
+
+- **highlightedFontType: String?**
+</br>nil value will take **normalFontType**
+
+- **selectedFontType: String?**
+</br>nil value will take **normalFontType**
+
+- **disabledFontType: String?**
+</br>nil value will take **normalFontType**
 
 
 ## Author
