@@ -82,7 +82,7 @@ class KSUIButton: UIButton {
     
     private func bgColor() -> UIColor {
         guard bgColorType != nil else {
-            return self.titleColor(for: .normal) ?? UIColor.clear
+            return UIColor.clear
         }
         
         return color(bgColorType!) ?? UIColor.clear
@@ -90,7 +90,7 @@ class KSUIButton: UIButton {
 
     private func borderColor() -> UIColor {
         guard borderColorType != nil else {
-            return self.titleColor(for: .normal) ?? UIColor.clear
+            return UIColor.clear
         }
         
         return color(borderColorType!) ?? UIColor.clear
