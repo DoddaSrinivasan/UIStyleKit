@@ -9,34 +9,31 @@
 Pod::Spec.new do |s|
   s.name             = 'KSUIKit'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of KSUIKit.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.summary          = 'Easily Configure and manage fonts and colours of UIComponents at a single place.'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+iOS Storyboard (or Interface Builder) is an effective way of developing UI for the apps. Storyboard provides ways to change colour and fonts of UIComponents. Wow, thats really wonderful.
+
+But since the font and colour of each component is hardcoded in storyboard, its really time consuming and a tedious job to change the font or colour schema through out the app.
+
+Say about 50 screens of the app were build using a font and color schema.
+
+Now the designer desides to change the font and colour schema throught out hte app.
+
+Now you have to go revisit all the 50 screens on the Storyboard and change the font and colour of each component. This sounds really a shit job to be done. And also this isn't done. What if they want to revert back at a later point (Versioning helps but you are dealing with Storyboard, so forget about it).
+
+You could make use of UIAppearance. For example you could change the font and color of a button using UIAppearance, but this will change all the buttons unless overridden (But for overridden button this again seems like the above problem).
+
+Wouldn't it be great if we could still set these properties in storyboard but changing the font or theme doesnt need to change in storyboard. Sound's real needy right. Yeah, so thats what this library does.
                        DESC
 
   s.homepage         = 'https://github.com/srinivasan.munna@gmail.com/KSUIKit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'srinivasan.munna@gmail.com' => 'srinivasan.munna@gmail.com' }
   s.source           = { :git => 'https://github.com/srinivasan.munna@gmail.com/KSUIKit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  # s.social_media_url = 'https://www.facebook.com/srinivasan.munna'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'KSUIKit/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'KSUIKit' => ['KSUIKit/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
