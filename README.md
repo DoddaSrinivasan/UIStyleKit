@@ -16,7 +16,9 @@ And now the font and colour schema changes as follows
 
 Now you have to go revisit all the 50 screens on the Storyboard and change the font and colour of each component. This sounds really a shit job to be done. And also this isn't done. What if they want to revert back at a later point (Versioning helps but you are dealing with Storyboard, so forget about it).
 
-Wouldn't it be great if we could configure something like a Theme at one single place. Yes thats what this library provides.
+You could make use of UIAppearance. For example you could change the font and color of a button using UIAppearance, but this will change all the buttons unless overridden (But for overridden button this again seems like the above problem). 
+
+Wouldn't it be great if we could still set these properties in storyboard but changing the font or theme doesnt need to change in storyboard. Sound's real needy right. Yeah, so thats what this library does.
 
 ## Example
 - Clone the repo
