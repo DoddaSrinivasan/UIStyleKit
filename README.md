@@ -19,9 +19,9 @@ Now you have to go revisit all the 50 screens on the Storyboard and change the f
 Wouldn't it be great if we could configure something like a Theme at one single place. Yes thats what this library provides.
 
 ## Example
-> - Clone the repo
-> - run pod install from the Example directory
-> - Open KSUIKit.xcworkspace and run the app on Simulator or device
+- Clone the repo
+- run pod install from the Example directory
+- Open KSUIKit.xcworkspace and run the app on Simulator or device
 
 ## Installation
 
@@ -61,38 +61,51 @@ You will find that the changes are not reflecting in the StoryBoard, this is bec
 ## Documentation
 
 #### KSUILabel
-> - **fontType: String?**
-</br>nil value will set the one picked from font picker in Storyboard</br>
-> - **fontSize: CGFloat** default = 16
-</br>will not effect if **fontType** is nil</br>
-> - **colorType: String?**
-</br>nil value will set the one picked from color picker in Storyboard</br>
+- **fontType: String?**
+</br>nil value will set the one picked from font picker in Storyboard
+
+- **fontSize: CGFloat** default = 16
+</br>will not effect if **fontType** is nil
+
+- **colorType: String?**
+</br>nil value will set the one picked from color picker in Storyboard
 
 #### KSUIButton
-> - **fontType: String?**
-</br>nil value will set the one picked from font picker in Storyboard</br>
-> - **fontSize: CGFloat** default = 16
-</br>will not effect if **fontType** is nil</br>
-> - **colorType: String?**
-</br>nil value will set the one picked from color picker in Storyboard</br>
-> - **bgColorType: String?**
-</br>nil value will set UIColor.clear for backgroundColor</br>
-> - **borderColorType: String?**
-</br>nil value will set UIColor.clear for borderColor</br>
-> - **borderWidth: CGFloat** default = 0</br>
-> - **cornerRadius: CGFloat** default = 0</br>
+- **fontType: String?**
+</br>nil value will set the one picked from font picker in Storyboard
+
+- **fontSize: CGFloat** default = 16
+</br>will not effect if **fontType** is nil
+
+- **colorType: String?**
+</br>nil value will set the one picked from color picker in Storyboard
+
+- **bgColorType: String?**
+</br>nil value will set UIColor.clear for backgroundColor
+
+- **borderColorType: String?**
+</br>nil value will set UIColor.clear for borderColor
+
+- **borderWidth: CGFloat** default = 0
+
+- **cornerRadius: CGFloat** default = 0
 
 #### KSUITextField
-> - **fontType: String?**
-</br>nil value will set the one picked from font picker in Storyboard</br>
-> - **fontSize: CGFloat** default = 16
-</br>will not effect if **fontType** is nil</br>
-> - **colorType: String?**
-</br>nil value will set the one picked from color picker in Storyboard</br>
-> - **borderColorType: String?**
-</br>nil value will set UIColor.clear for borderColor</br>
-> - **borderWidth: CGFloat** default = 0</br>
-> - **cornerRadius: CGFloat** default = 0</br>
+- **fontType: String?**
+</br>nil value will set the one picked from font picker in Storyboard
+
+- **fontSize: CGFloat** default = 16
+</br>will not effect if **fontType** is nil
+
+- **colorType: String?**
+</br>nil value will set the one picked from color picker in Storyboard
+
+- **borderColorType: String?**
+</br>nil value will set UIColor.clear for borderColor
+
+- **borderWidth: CGFloat** default = 0
+
+- **cornerRadius: CGFloat** default = 0
 
 
 ## Author
