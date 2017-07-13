@@ -1,16 +1,16 @@
 PODS:
-  - KSUIKit (0.1.0)
+  - UIStyleKit (0.1.1)
 
 DEPENDENCIES:
-  - KSUIKit (from `../`)
+  - UIStyleKit (from `../`)
 
 EXTERNAL SOURCES:
-  KSUIKit:
+  UIStyleKit:
     :path: ../
 
 SPEC CHECKSUMS:
-  KSUIKit: 483ba1b7ee3275236ee262ac257335cba2170480
+  UIStyleKit: 731b5db8dac64b34ad09597160e304972b2afb61
 
-PODFILE CHECKSUM: 29977da8e7ec26ea8a00c387ac300bd31f2e81a8
+PODFILE CHECKSUM: 35dcdb41b1b0ea0d273190f9a70c41cf72e99a77
 
 COCOAPODS: 1.2.1

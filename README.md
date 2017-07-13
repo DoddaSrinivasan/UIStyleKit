@@ -1,4 +1,4 @@
-# KSUIKit - Enhanced UIKit for managing fonts and colours
+# UIStyleKit - Enhanced UIKit for managing fonts and colours
 
 iOS Storyboard (or Interface Builder) is an effective way of developing UI for the apps. Storyboard provides ways to change colour and fonts of UIComponents. Wow, thats really wonderful.
 
@@ -23,36 +23,36 @@ Wouldn't it be great if we could still set these properties in storyboard but ch
 ## Example
 - Clone the repo
 - run pod install from the Example directory
-- Open KSUIKit.xcworkspace and run the app on Simulator or device
+- Open UIStyleKit.xcworkspace and run the app on Simulator or device
 
 ## Installation
 
-KSUIKit is available through [CocoaPods](http://cocoapods.org). To install
+UIStyleKit is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "KSUIKit"
+pod "UIStyleKit"
 ```
 
 ## Usage
 
 Configure the colours and fonts you would be using in the app in the appdelegate as shown in below example
 ```swift
-KSUITheme.appearance().fonts = ["Regular": "Roboto-Light",
+SKUITheme.appearance().fonts = ["Regular": "Roboto-Light",
                                 "Italic": "Palatino-Italic",
                                 "Bold": "Palatino-Bold",
                                 "BoldItalic": "Roboto-BoldItalic"]
         
-KSUITheme.appearance().colors = ["positive" : UIColor(rgb: 0x387ef5),
+SKUITheme.appearance().colors = ["positive" : UIColor(rgb: 0x387ef5),
                                  "balanced" : UIColor(rgb: 0x33cd5f),
                                  "energized" : UIColor(rgb: 0xffc900),
                                  "assertive" : UIColor(rgb: 0xef473a),
                                  "white" : UIColor.white]
 ```
 
-In Storyboard, select the component (label for example) and in the **Identity inspector** set the **custom class** to **KSUILabel** and **module** to **KSUIKit**
+In Storyboard, select the component (label for example) and in the **Identity inspector** set the **custom class** to **SKUILabel** and **module** to **UIStyleKit**
 
-Now in the **Attribute Inspector** you should find new attributes to be configured. Configure them with the keys you mentioned in the **KSUITheme appearance** defined in app delegate. (Find example in below image).
+Now in the **Attribute Inspector** you should find new attributes to be configured. Configure them with the keys you mentioned in the **SKUITheme appearance** defined in app delegate. (Find example in below image).
 
 ![](images/AttributesInspector.png)
 
@@ -62,10 +62,10 @@ You will find that the changes are not reflecting in the StoryBoard, this is bec
 
 ## Documentation
 
-#### KSUIView
+#### SKUIView
 - **bgColorType: String?**
 </br>nil value will set the one picked from color picker in Storyboard
-#### KSUILabel
+#### SKUILabel
 - **fontType: String?**
 </br>nil value will set the one picked from font picker in Storyboard
 
@@ -75,7 +75,7 @@ You will find that the changes are not reflecting in the StoryBoard, this is bec
 - **colorType: String?**
 </br>nil value will set the one picked from color picker in Storyboard
 
-#### KSUIButton
+#### SKUIButton
 - **fontType: String?**
 </br>nil value will set the one picked from font picker in Storyboard
 
@@ -95,7 +95,7 @@ You will find that the changes are not reflecting in the StoryBoard, this is bec
 
 - **cornerRadius: CGFloat** default = 0
 
-#### KSUITextField
+#### SKUITextField
 - **fontType: String?**
 </br>nil value will set the one picked from font picker in Storyboard
 
@@ -112,7 +112,7 @@ You will find that the changes are not reflecting in the StoryBoard, this is bec
 
 - **cornerRadius: CGFloat** default = 0
 
-#### KSUISegmentedControl
+#### SKUISegmentedControl
 
 - **fontSize: CGFloat** default = 16
 </br>will not effect if **fontType** is nil
@@ -134,4 +134,4 @@ You will find that the changes are not reflecting in the StoryBoard, this is bec
 srinivasan.munna@gmail.com
 
 ## License
-KSUIKit is available under the MIT license. See the LICENSE file for more info.
+UIStyleKit is available under the MIT license. See the LICENSE file for more info.

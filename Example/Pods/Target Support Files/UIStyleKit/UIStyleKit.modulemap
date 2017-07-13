@@ -1,0 +1,6 @@
+framework module UIStyleKit {
+  umbrella header "UIStyleKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

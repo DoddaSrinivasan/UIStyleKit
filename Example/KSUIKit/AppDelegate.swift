@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import KSUIKit
+import UIStyleKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,12 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        KSUITheme.appearance().fonts = ["Regular": "Roboto-Light",
+        SKUITheme.appearance().fonts = ["Regular": "Roboto-Light",
                                         "Italic": "Palatino-Italic",
                                         "Bold": "Palatino-Bold",
                                         "BoldItalic": "Roboto-BoldItalic"]
         
-        KSUITheme.appearance().colors = ["positive" : UIColor(rgb: 0x387ef5),
+        SKUITheme.appearance().colors = ["positive" : UIColor(rgb: 0x387ef5),
                                          "balanced" : UIColor(rgb: 0x33cd5f),
                                          "energized" : UIColor(rgb: 0xffc900),
                                          "assertive" : UIColor(rgb: 0xef473a),

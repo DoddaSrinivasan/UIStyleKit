@@ -1,11 +1,9 @@
 use_frameworks!
 
-target 'KSUIKit_Example' do
-  pod 'KSUIKit', :path => '../'
+target 'UIStyleKit_Example' do
+  pod 'UIStyleKit', :path => '../'
 
-  target 'KSUIKit_Tests' do
+  target 'UIStyleKit_Tests' do
     inherit! :search_paths
-
-    
   end
 end
