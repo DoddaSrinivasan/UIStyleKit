@@ -52,7 +52,7 @@ In Storyboard, select the component (label for example) and in the **Identity in
 
 Now in the **Attribute Inspector** you should find new attributes to be configured. Configure them with the keys you mentioned in the **KSUITheme appearance** defined in appdelegate. (Find example in below image)
 
-![](KSUIKit/images/AttributesInspector.png?raw=true)
+![](images/AttributesInspector.png)
 
 ## Author
 srinivasan.munna@gmail.com
