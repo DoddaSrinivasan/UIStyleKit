@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UIStyleKit'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Easily Configure and manage fonts and colours of UIComponents at a single place.'
   s.description      = <<-DESC
 iOS Storyboard (or Interface Builder) is an effective way of developing UI for the apps. Storyboard provides ways to change colour and fonts of UIComponents. Wow, thats really wonderful.
