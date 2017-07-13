@@ -29,7 +29,7 @@ Wouldn't it be great if we could still set these properties in storyboard but ch
   s.homepage         = 'https://github.com/DoddaSrinivasan/UIStyleKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'srinivasan.munna@gmail.com' => 'srinivasan.munna@gmail.com' }
-  s.source           = { :git => 'https://github.com/DoddaSrinivasan/UIStyleKit', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/DoddaSrinivasan/UIStyleKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://www.facebook.com/srinivasan.munna'
 
   s.ios.deployment_target = '8.0'
