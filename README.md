@@ -1,5 +1,5 @@
-KSUIKit - Enhanced UIKit for managing fonts and colours
-===================
+# KSUIKit - Enhanced UIKit for managing fonts and colours
+
 iOS Storyboard (or Interface Builder) is an effective way of developing UI for the apps. Storyboard provides ways to change colour and fonts of UIComponents. Wow, thats really wonderful.
 
 But since the font and colour of each component is hardcoded in storyboard, its really time consuming and a tedious job to change the font or colour schema through out the app.
@@ -18,14 +18,10 @@ Now you have to go revisit all the 50 screens Storyboard and change the font and
 
 Wouldn't it be great if we could configure something like a Theme at one single place. Yes thats what this library provides.
 
-----------
-
 ## Example
 > - Clone the repo
 > - run pod install from the Example directory
 > - Open KSUIKit.xcworkspace and run the app on Simulator or device
-
-----------
 
 ## Installation
 
@@ -35,12 +31,9 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "KSUIKit"
 ```
-----------
 
 ## Author
 srinivasan.munna@gmail.com
-
-----------
 
 ## License
 KSUIKit is available under the MIT license. See the LICENSE file for more info.
