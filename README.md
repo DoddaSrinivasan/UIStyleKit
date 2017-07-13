@@ -14,7 +14,7 @@ And now the font and colour schema changes as follows
 #### Font - Palatino
 #### Color Schema - ![#ef473a](https://placehold.it/15/ef473a/000000?text=+)![#33cd5f](https://placehold.it/15/33cd5f/000000?text=+)![#444444](https://placehold.it/15/444444/000000?text=+)
 
-Now you have to go revisit all the 50 screens Storyboard and change the font and colour of each component. This sounds really a shit job to be done. And also this isn't done. What if they want to revert back at a later point (Versioning helps but you are dealing with Storyboard, so forget about it).
+Now you have to go revisit all the 50 screens on the Storyboard and change the font and colour of each component. This sounds really a shit job to be done. And also this isn't done. What if they want to revert back at a later point (Versioning helps but you are dealing with Storyboard, so forget about it).
 
 Wouldn't it be great if we could configure something like a Theme at one single place. Yes thats what this library provides.
 
@@ -60,7 +60,40 @@ You will find that the changes are not reflecting in the StoryBoard, this is bec
 
 ## Documentation
 
-On its way
+#### KSUILabel
+> - **fontType: String?**
+</br>nil value will set the one picked from font picker in Storyboard</br>
+> - **fontSize: CGFloat** default = 16
+</br>will not effect if **fontType** is nil</br>
+> - **colorType: String?**
+</br>nil value will set the one picked from color picker in Storyboard</br>
+
+#### KSUIButton
+> - **fontType: String?**
+</br>nil value will set the one picked from font picker in Storyboard</br>
+> - **fontSize: CGFloat** default = 16
+</br>will not effect if **fontType** is nil</br>
+> - **colorType: String?**
+</br>nil value will set the one picked from color picker in Storyboard</br>
+> - **bgColorType: String?**
+</br>nil value will set UIColor.clear for backgroundColor</br>
+> - **borderColorType: String?**
+</br>nil value will set UIColor.clear for borderColor</br>
+> - **borderWidth: CGFloat** default = 0</br>
+> - **cornerRadius: CGFloat** default = 0</br>
+
+#### KSUITextField
+> - **fontType: String?**
+</br>nil value will set the one picked from font picker in Storyboard</br>
+> - **fontSize: CGFloat** default = 16
+</br>will not effect if **fontType** is nil</br>
+> - **colorType: String?**
+</br>nil value will set the one picked from color picker in Storyboard</br>
+> - **borderColorType: String?**
+</br>nil value will set UIColor.clear for borderColor</br>
+> - **borderWidth: CGFloat** default = 0</br>
+> - **cornerRadius: CGFloat** default = 0</br>
+
 
 ## Author
 srinivasan.munna@gmail.com
