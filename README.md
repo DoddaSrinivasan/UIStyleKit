@@ -32,6 +32,27 @@ it, simply add the following line to your Podfile:
 pod "KSUIKit"
 ```
 
+## Usage
+
+Configure the colours and fonts you would be using in the app in the appdelegate as shown in below example
+```swift
+KSUITheme.appearance().fonts = ["Regular": "Roboto-Light",
+                                "Italic": "Palatino-Italic",
+                                "Bold": "Palatino-Bold",
+                                "BoldItalic": "Roboto-BoldItalic"]
+        
+KSUITheme.appearance().colors = ["positive" : UIColor(rgb: 0x387ef5),
+                                 "balanced" : UIColor(rgb: 0x33cd5f),
+                                 "energized" : UIColor(rgb: 0xffc900),
+                                 "assertive" : UIColor(rgb: 0xef473a),
+                                 "white" : UIColor.white]
+```
+
+In Storyboard, select the component (label for example) and in the **Identity inspector** set the **custom class** to **KSUILabel** and **module** to **KSUIKit**
+
+Now in the **Attribute Inspector** you should find new attributes to be configured. Configure them with the keys you mentioned in the **KSUITheme appearance** defined in appdelegate. (Find example in below image)
+
+
 ## Author
 srinivasan.munna@gmail.com
 
