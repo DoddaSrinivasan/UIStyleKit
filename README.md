@@ -50,9 +50,17 @@ KSUITheme.appearance().colors = ["positive" : UIColor(rgb: 0x387ef5),
 
 In Storyboard, select the component (label for example) and in the **Identity inspector** set the **custom class** to **KSUILabel** and **module** to **KSUIKit**
 
-Now in the **Attribute Inspector** you should find new attributes to be configured. Configure them with the keys you mentioned in the **KSUITheme appearance** defined in appdelegate. (Find example in below image)
+Now in the **Attribute Inspector** you should find new attributes to be configured. Configure them with the keys you mentioned in the **KSUITheme appearance** defined in app delegate. (Find example in below image).
 
 ![](images/AttributesInspector.png)
+
+You will find that the changes are not reflecting in the StoryBoard, this is because **Theme appearance is set in the app delegate** and would be available only while the app is running. 
+
+*Figuring out a way to make this Theme appearance available for story board. Will update the library once a better way is available.*
+
+## Documentation
+
+On its way
 
 ## Author
 srinivasan.munna@gmail.com
