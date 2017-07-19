@@ -50,7 +50,11 @@ SKUITheme.appearance().colors = ["positive" : UIColor(rgb: 0x387ef5),
                                  "white" : UIColor.white]
 ```
 
-In Storyboard, select the component (label for example) and in the **Identity inspector** set the **custom class** to **SKUILabel** and **module** to **UIStyleKit**
+If you are adding custom fonts to the app, make sure you mention them in your apps info.plist as shown below
+
+![](images/InfoPlistCustomFont.png)
+
+Moving forward, go to the desired Storyboard, select the component (label for example) and in the **Identity inspector** set the **custom class** to **SKUILabel** and **module** to **UIStyleKit**
 
 Now in the **Attribute Inspector** you should find new attributes to be configured. Configure them with the keys you mentioned in the **SKUITheme appearance** defined in app delegate. (Find example in below image).
 
