@@ -8,6 +8,7 @@
 
 import UIKit
 
+@IBDesignable
 class SKUIButton: UIButton {
 
     @IBInspectable public var fontSize: CGFloat = 16 {

@@ -8,6 +8,7 @@
 
 import UIKit
 
+@IBDesignable
 class SKUIView: UIView {
 
     @IBInspectable public var bgColorType: String? {

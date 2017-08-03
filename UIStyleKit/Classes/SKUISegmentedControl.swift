@@ -8,6 +8,7 @@
 
 import UIKit
 
+@IBDesignable
 class SKUISegmentedControl: UISegmentedControl {
 
     @IBInspectable public var fontSize: CGFloat = 16 {
