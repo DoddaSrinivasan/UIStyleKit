@@ -9,7 +9,7 @@ Say about 50 screens of the app were build using the following
 #### Font - Roboto
 #### Color Schema - ![#387ef5](https://placehold.it/15/387ef5/000000?text=+)![#ffc900](https://placehold.it/15/ffc900/000000?text=+)![#444444](https://placehold.it/15/444444/000000?text=+)
 
-And now the font and colour schema changes as follows
+And now the font and colour schema changes as follows:
 
 #### Font - Palatino
 #### Color Schema - ![#ef473a](https://placehold.it/15/ef473a/000000?text=+)![#33cd5f](https://placehold.it/15/33cd5f/000000?text=+)![#444444](https://placehold.it/15/444444/000000?text=+)
